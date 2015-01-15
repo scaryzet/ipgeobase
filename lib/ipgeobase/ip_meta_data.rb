@@ -35,7 +35,7 @@ module Ipgeobase
       #   Iconv.iconv('utf-8', 'windows-1251', api_string).first
       # end
 
-      api_string.encode("UTF-8")
+      api_string.to_s.encode("UTF-8")
     end
   end
 end
